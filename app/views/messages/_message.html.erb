@@ -1,0 +1,5 @@
+<li>
+  <span class="created_at"><%= message.created_at.in_time_zone("Asia/Kolkata").strftime("%d %b, %a %I:%M %p") %></span>
+  <span class=<%= message.user == current_user ? "creator" : "other" %>><%=  message.user.first_name.to_s + " " + message.user.last_name.to_s %> :</span>
+  <%= message.msg %>
+</li>

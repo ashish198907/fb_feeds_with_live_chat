@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My FB Feeds</title>
+  <title>FeedChat</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,8 @@
 <body class="body_bg_color">
 <div class="container">
   <div class="hgt_100">
-    <h2 class="flt-lt">My FB Feeds</h2>
+    <%= image_tag "logo2.png", :class => "logo" %>
+    <!--<h2 class="flt-lt">FeedChat</h2>-->
     <%if current_user%>
         <div class="flt-rt">
           <table>
@@ -27,6 +28,10 @@
   <div style="color:red;" align="center" id="error_div"><%= flash[:error] %></div>
   <div style="color:green;" align="center" id="success_div"><%= flash[:notice] %></div>
   <%= yield %>
+</div>
+<div class="footer">
+  Created by -
+  <%= link_to "Ashish Sharma", "http://www.linkedin.com/in/ashish198907", :class => "created_by" %>
 </div>
 <script type="text/javascript">
     var fb_app_id = "<%= APP_CONFIG['FB_APP_ID'] %>"

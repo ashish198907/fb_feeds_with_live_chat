@@ -12,6 +12,11 @@
  *= require_tree .
  */
 
+.logo {
+    width: 250px;
+    margin-top: 30px;
+}
+
 .mgt_50 {
     margin-top: 50px;
 }
@@ -64,15 +69,17 @@
 }
 
 .login_div {
-    border: 1px solid grey;
-    float: left;
-    padding: 20px;
+    color: darkblue;
+    font-size: 20px;
+    border: 10px outset green;
+    padding: 60px 20px;
     border-radius: 10px;
-    background-color: burlyWood;
+    background-color: lightgrey;
+    width: 92.5%;
 }
 
 .fb_login_button {
-    float: right;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -87,4 +94,17 @@
     border-color: grey;
     resize: none;
 
+}
+
+.footer {
+    text-align: right;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.created_by {
+    color: darkslateblue;
+    font-weight: bold;
+    text-decoration: none;
 }

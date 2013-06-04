@@ -1,7 +1,7 @@
 development:
     FB_SECRET : '64eb5d0bb39341dbbbee97d04b05c8f4'
     FB_APP_ID : '156387914515136'
-    url : 'http://192.168.1.234:3000'
+    url : 'http://localhost:3000'
 production:
     FB_SECRET : '6485e1dcb42d90ec24107c160cc96709'
     FB_APP_ID : '251709524969274'

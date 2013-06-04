@@ -23,8 +23,8 @@ class UserOauthController < ApplicationController
     current_user.clear_feeds
     @graph = Koala::Facebook::GraphAPI.new(current_user.access_token)
     @feeds = @graph.get_connections("me", "feed")
-    @feeds.each do |feed|
-      Feed.create(:user_id => current_user.id,:feed_id => feed['id'], :story => feed['story'], :feed_creation_time => feed['created_time'], :comment_count => feed['comments']['count'])
+    @feeds.compact.each do |feed|
+      Feed.create(:user_id => current_user.id,:feed_id => feed['id'], :story => feed['story'], :feed_creation_time => feed['created_time'], :comment_count => feed['comments'].present? ? feed['comments']['count'] : '-')
     end
   end
 

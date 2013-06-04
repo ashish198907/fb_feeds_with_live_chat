@@ -3,6 +3,6 @@ development:
     FB_APP_ID : '156387914515136'
     url : 'http://192.168.1.234:3000'
 production:
-    FB_SECRET : '61621a847147d18e2d12139dd99e50d9'
-    FB_APP_ID : '215962525195050'
-    url : 'http://my-fb-feeds.herokuapp.com'
+    FB_SECRET : '6485e1dcb42d90ec24107c160cc96709'
+    FB_APP_ID : '251709524969274'
+    url : 'http://feedchat.herokuapp.com'
